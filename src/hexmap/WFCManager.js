@@ -188,7 +188,7 @@ export class WFCManager {
   /**
    * Run a single WFC attempt using the populate context.
    * Handles persisted-unfixed cells, neighbor cell construction, and failure tracking.
-   * @param {Object} ctx - Populate context from HexMap._setupPopulateContext
+   * @param {Object} ctx - Populate context from HexWorldModel.buildPopulateContext
    * @returns {Object} { success, tiles?, collapseOrder?, changedFixedCells?, unfixedKeys?, isNeighborConflict?, failedCell?, sourceKey?, neighborConflict?, lastConflict? }
    */
   async runWfcAttempt(ctx) {
